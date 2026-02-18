@@ -7,26 +7,32 @@ This file provides guidance to AI assistants (Claude and others) working in this
 ## Repository Overview
 
 **Repository**: alexregrets/alexregrets
-**Status**: This repository is currently empty — no source files, build configs, or tests have been committed yet.
+**Project**: uni_mail_bot — Telegram bot that monitors university email (mail.ru) via IMAP and forwards messages with attachments to Telegram chats/groups.
 
-> When code is added, update this file to reflect the actual project structure, stack, conventions, and workflows.
+**Stack**: Python 3.12, aiogram 3, imapclient, aiosqlite, python-dotenv
 
 ---
 
-## Current State
-
-The repository was initialized with a single branch and a remote configured at the local proxy. No commits exist yet.
+## Project Structure
 
 ```
-/home/user/alexregrets/
-└── .git/        # Git metadata only
+├── bot.py              # Entry point: Bot + Dispatcher + IMAP background task
+├── handlers.py         # Telegram command handlers (/start, /register, /aliases, /search, etc.)
+├── states.py           # aiogram FSM StatesGroup definitions
+├── imap_poller.py      # IMAP polling loop (threaded) + Telegram forwarding
+├── email_parser.py     # Email parsing: headers, body, attachments, encodings
+├── database.py         # SQLite schema + async CRUD via aiosqlite
+├── config.py           # Loads .env, exposes settings as module-level constants
+├── texts.py            # i18n message strings (ru/en)
+├── requirements.txt    # Python dependencies
+├── .env.example        # Environment variable template
+├── .gitignore          # Ignores .env, *.db, __pycache__/, venv/
+└── CLAUDE.md           # This file
 ```
 
 ---
 
 ## General Conventions for AI Assistants
-
-These conventions apply until project-specific ones are established:
 
 ### Reading Code Before Changing It
 
@@ -64,105 +70,44 @@ These conventions apply until project-specific ones are established:
 <optional body explaining motivation and context>
 ```
 
-Example:
-```
-Add user authentication middleware
-
-JWT validation was missing from API routes. This adds a reusable
-middleware that checks the Authorization header on protected endpoints.
-```
-
 ---
 
-## Development Workflow (Template)
-
-Once the project is established, document the following here:
+## Development Workflow
 
 ### Setup
 
 ```bash
-# Install dependencies
-# e.g., npm install / pip install -r requirements.txt / cargo build
-
-# Copy and configure environment variables
+pip install -r requirements.txt
 cp .env.example .env
+# Edit .env with your BOT_TOKEN, IMAP credentials, GROUP_ID
 ```
 
 ### Running the Application
 
 ```bash
-# Start the development server
-# e.g., npm run dev / python main.py / cargo run
-```
-
-### Running Tests
-
-```bash
-# Run the full test suite
-# e.g., npm test / pytest / cargo test
-```
-
-### Linting and Formatting
-
-```bash
-# Check code style
-# e.g., npm run lint / ruff check . / cargo clippy
-```
-
-### Building for Production
-
-```bash
-# Create a production build
-# e.g., npm run build / docker build .
+python bot.py
 ```
 
 ---
 
-## Project Structure (Template)
+## Environment Variables
 
-Update this section once the codebase is established. A typical structure might look like:
-
-```
-├── src/           # Application source code
-├── tests/         # Test files
-├── docs/          # Documentation
-├── scripts/       # Utility/automation scripts
-├── .github/       # CI/CD workflows (GitHub Actions)
-├── .env.example   # Environment variable template
-└── CLAUDE.md      # This file
-```
+| Variable        | Description                              | Required |
+| --------------- | ---------------------------------------- | -------- |
+| `BOT_TOKEN`     | Telegram bot token from @BotFather       | Yes      |
+| `GROUP_ID`      | Default Telegram chat ID for forwarding  | Yes      |
+| `IMAP_SERVER`   | IMAP server hostname (default: imap.mail.ru) | No   |
+| `IMAP_EMAIL`    | Default email for auto-registration      | No       |
+| `IMAP_PASSWORD` | App password for default email           | No       |
+| `POLL_INTERVAL` | Seconds between IMAP polls (default: 60) | No       |
 
 ---
 
-## Environment Variables (Template)
+## Key Decisions and Context
 
-Document required environment variables here as they are added. Example:
-
-| Variable       | Description                | Required |
-| -------------- | -------------------------- | -------- |
-| `DATABASE_URL` | Connection string for the DB | Yes    |
-| `API_KEY`      | Third-party API key         | Yes     |
-| `DEBUG`        | Enable debug logging        | No      |
-
----
-
-## Key Decisions and Context (Template)
-
-Use this section to record architectural decisions that would otherwise only exist in someone's head:
-
-- **Why X over Y**: Explain tradeoffs made when choosing libraries, frameworks, or patterns.
-- **Known limitations**: Document intentional shortcuts or areas that need future attention.
-- **External dependencies**: Note any third-party services or APIs the application relies on.
-
----
-
-## Updating This File
-
-This file should be kept current. Update it whenever:
-
-- A new major dependency or framework is added.
-- The directory structure changes significantly.
-- A new development workflow or tooling step is introduced.
-- An architectural decision is made that future contributors should know about.
-
-The goal is that any AI assistant or new developer can read this file and immediately understand how to work in the repository.
+- **UID tracking over UNSEEN flags**: UNSEEN flags are unreliable when email is also read via webmail. UID high-water mark (`last_uid`) per account is deterministic.
+- **Thread executor for IMAP**: `imapclient` is synchronous. All IMAP calls run in `ThreadPoolExecutor` to avoid blocking the asyncio event loop.
+- **No IDLE mode**: IDLE requires persistent connections and complex renewal. Polling every 60s is simpler and sufficient for this use case.
+- **Plaintext passwords in SQLite**: Known tradeoff for a personal bot. The `.db` and `.env` files are gitignored.
+- **Per-account target_chat_id**: Each registered account forwards to the chat where `/register` was called. The `.env` `GROUP_ID` is used only for the auto-registered default account.
+- **i18n via texts.py**: Simple dict-based translation (ru/en). Language preference stored per user in SQLite.
