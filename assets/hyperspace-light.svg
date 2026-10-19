@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 120" width="380" height="120" role="img" aria-label="An X-wing flies through a parallax starfield and fires laser volleys">
+  <style>
+    .bg { fill: #f6f8fa; stroke: #d1d9e0; }
+    .stars circle { fill: #1f2328; }
+    @keyframes drift { to { transform: translateX(-380px); } }
+    .s0 { animation: drift 18s linear infinite; } .s1 { animation: drift 10s linear infinite; } .s2 { animation: drift 5s linear infinite; }
+    .hull { fill: #1f2328; }
+    .cockpit { fill: #0969da; }
+    .engine { fill: #ff8a3d; animation: glow .4s ease-in-out infinite alternate; }
+    @keyframes glow { to { opacity: .45; } }
+    .bob { animation: bob 3s ease-in-out infinite; }
+    @keyframes bob { 50% { transform: translateY(-4px); } }
+    .laser { stroke: #ff4d4d; stroke-width: 2; stroke-linecap: round; opacity: 0;
+             animation: shoot 2.4s linear infinite; }
+    .l2 { animation-delay: .18s; }
+    @keyframes shoot {
+      0%   { transform: translateX(0);     opacity: 1; }
+      30%  { transform: translateX(220px); opacity: 1; }
+      31%, 100% { opacity: 0; }
+    }
+    .cap { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 10px; fill: #59636e; }
+    @media (prefers-reduced-motion: reduce) { g[class^=s], .bob, .engine { animation: none; } .laser { animation: none; } }
+  </style>
+  <rect class="bg" x="0.5" y="0.5" width="379" height="119" rx="8"/>
+  <svg x="1" y="1" width="378" height="118" viewBox="0 0 378 118"><g class="stars"><g class="s0" opacity="0.35"><g><circle cx="123" cy="22" r="0.8"/><circle cx="247" cy="14" r="0.8"/><circle cx="204" cy="45" r="0.8"/><circle cx="22" cy="61" r="0.8"/><circle cx="14" cy="53" r="0.8"/><circle cx="27" cy="16" r="0.8"/><circle cx="161" cy="95" r="0.8"/><circle cx="47" cy="30" r="0.8"/><circle cx="238" cy="108" r="0.8"/><circle cx="219" cy="49" r="0.8"/><circle cx="371" cy="11" r="0.8"/><circle cx="326" cy="37" r="0.8"/><circle cx="55" cy="19" r="0.8"/><circle cx="117" cy="94" r="0.8"/><circle cx="69" cy="69" r="0.8"/><circle cx="243" cy="46" r="0.8"/><circle cx="208" cy="13" r="0.8"/><circle cx="23" cy="28" r="0.8"/><circle cx="259" cy="52" r="0.8"/><circle cx="119" cy="69" r="0.8"/><circle cx="172" cy="38" r="0.8"/><circle cx="302" cy="81" r="0.8"/><circle cx="93" cy="68" r="0.8"/><circle cx="200" cy="101" r="0.8"/><circle cx="277" cy="37" r="0.8"/><circle cx="372" cy="19" r="0.8"/></g><g transform="translate(380 0)"><circle cx="123" cy="22" r="0.8"/><circle cx="247" cy="14" r="0.8"/><circle cx="204" cy="45" r="0.8"/><circle cx="22" cy="61" r="0.8"/><circle cx="14" cy="53" r="0.8"/><circle cx="27" cy="16" r="0.8"/><circle cx="161" cy="95" r="0.8"/><circle cx="47" cy="30" r="0.8"/><circle cx="238" cy="108" r="0.8"/><circle cx="219" cy="49" r="0.8"/><circle cx="371" cy="11" r="0.8"/><circle cx="326" cy="37" r="0.8"/><circle cx="55" cy="19" r="0.8"/><circle cx="117" cy="94" r="0.8"/><circle cx="69" cy="69" r="0.8"/><circle cx="243" cy="46" r="0.8"/><circle cx="208" cy="13" r="0.8"/><circle cx="23" cy="28" r="0.8"/><circle cx="259" cy="52" r="0.8"/><circle cx="119" cy="69" r="0.8"/><circle cx="172" cy="38" r="0.8"/><circle cx="302" cy="81" r="0.8"/><circle cx="93" cy="68" r="0.8"/><circle cx="200" cy="101" r="0.8"/><circle cx="277" cy="37" r="0.8"/><circle cx="372" cy="19" r="0.8"/></g></g><g class="s1" opacity="0.6"><g><circle cx="159" cy="88" r="1.1"/><circle cx="58" cy="59" r="1.1"/><circle cx="15" cy="78" r="1.1"/><circle cx="291" cy="68" r="1.1"/><circle cx="333" cy="40" r="1.1"/><circle cx="264" cy="70" r="1.1"/><circle cx="220" cy="55" r="1.1"/><circle cx="319" cy="108" r="1.1"/><circle cx="180" cy="78" r="1.1"/><circle cx="23" cy="82" r="1.1"/><circle cx="246" cy="113" r="1.1"/><circle cx="312" cy="37" r="1.1"/><circle cx="147" cy="78" r="1.1"/><circle cx="9" cy="56" r="1.1"/><circle cx="64" cy="19" r="1.1"/><circle cx="22" cy="89" r="1.1"/></g><g transform="translate(380 0)"><circle cx="159" cy="88" r="1.1"/><circle cx="58" cy="59" r="1.1"/><circle cx="15" cy="78" r="1.1"/><circle cx="291" cy="68" r="1.1"/><circle cx="333" cy="40" r="1.1"/><circle cx="264" cy="70" r="1.1"/><circle cx="220" cy="55" r="1.1"/><circle cx="319" cy="108" r="1.1"/><circle cx="180" cy="78" r="1.1"/><circle cx="23" cy="82" r="1.1"/><circle cx="246" cy="113" r="1.1"/><circle cx="312" cy="37" r="1.1"/><circle cx="147" cy="78" r="1.1"/><circle cx="9" cy="56" r="1.1"/><circle cx="64" cy="19" r="1.1"/><circle cx="22" cy="89" r="1.1"/></g></g><g class="s2" opacity="0.9"><g><circle cx="49" cy="33" r="1.5"/><circle cx="149" cy="100" r="1.5"/><circle cx="31" cy="55" r="1.5"/><circle cx="209" cy="101" r="1.5"/><circle cx="311" cy="99" r="1.5"/><circle cx="106" cy="51" r="1.5"/><circle cx="136" cy="101" r="1.5"/><circle cx="364" cy="22" r="1.5"/></g><g transform="translate(380 0)"><circle cx="49" cy="33" r="1.5"/><circle cx="149" cy="100" r="1.5"/><circle cx="31" cy="55" r="1.5"/><circle cx="209" cy="101" r="1.5"/><circle cx="311" cy="99" r="1.5"/><circle cx="106" cy="51" r="1.5"/><circle cx="136" cy="101" r="1.5"/><circle cx="364" cy="22" r="1.5"/></g></g></g></svg>
+  <g class="bob">
+    <g class="hull">
+      <path d="M24 58 L44 52 L118 55 L136 60 L118 65 L44 68 L24 62 Z"/>
+      <path class="cockpit" d="M66 55 L84 53.5 L92 56 L66 57 Z"/>
+      <path d="M40 54 L58 34 L66 34 L58 54 Z"/>
+      <path d="M40 66 L58 86 L66 86 L58 66 Z"/>
+      <rect x="58" y="32" width="84" height="3" rx="1.5"/>
+      <rect x="58" y="85" width="84" height="3" rx="1.5"/>
+      <rect x="18" y="55" width="8" height="10" rx="2" class="engine"/>
+    </g>
+    <line class="laser"    x1="144" y1="33.5" x2="164" y2="33.5"/>
+    <line class="laser l2" x1="144" y1="86.5" x2="164" y2="86.5"/>
+  </g>
+  <text class="cap" x="14" y="108">✧ Calculating the jump to hyperspace… (12s)</text>
+</svg>

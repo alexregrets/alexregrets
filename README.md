@@ -2,26 +2,19 @@
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cournot-dark.svg">
-  <img src="assets/cournot-light.svg" alt="Cournot best-response diagram, with reaction functions meeting at Nash equilibrium" width="760">
+  <img src="assets/cournot-light.svg" alt="Cournot best-response diagram: two firms keep best-responding to each other and the path converges to the Nash equilibrium" width="760">
 </picture>
 
-# Alexander Sotnik
-
-### Economics × code
-
-Economics undergraduate at the Financial University, Moscow · Class of 2028
-
-[![Python](https://img.shields.io/badge/Python-2b2b2b?style=flat-square&logo=python&logoColor=ffd43b)](https://www.python.org/)
-[![Econometrics](https://img.shields.io/badge/Econometrics-2b2b2b?style=flat-square&logo=wolfram&logoColor=d9a441)](https://github.com/alexregrets)
-[![Moscow](https://img.shields.io/badge/Moscow-2b2b2b?style=flat-square&logo=googlemaps&logoColor=d9a441)](https://github.com/alexregrets)
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
+  <img src="assets/terminal-light.svg" alt="Terminal: Alexander Sotnik, economics at the Financial University, class of 2028. Direction: incentive design for agentic economies, measured causally" width="760">
+</picture>
 
 </div>
 
----
+I build things at the seam between economics and code. Not an ML engineer who picked up some economics, and not an economist who picked up some Python: the combination is the point, and it is rare because it costs you both halves.
 
-I build things at the seam between econometrics and code. The combination is the point: I want to understand both how a system works and how to measure what it does.
-
-Heading toward **causal inference**. Estimating a coefficient and identifying an effect are different jobs.
+Where it is heading: **mechanism design for economies where the players are AI agents**, and causal inference to check what those agents actually do. Estimating a coefficient and identifying an effect are different jobs, and only one of them is hard to hire for.
 
 ## Selected work
 
@@ -31,87 +24,117 @@ Heading toward **causal inference**. Estimating a coefficient and identifying an
 
 ### [Econometrics Championship](https://github.com/alexregrets/econ-championship)
 
-A Cournot oligopoly tournament that leaves a panel dataset behind for students to analyze.
+A Cournot tournament for an econometrics course. Teams play the market, the market leaves a panel dataset behind, and the same students then regress on data they generated themselves. Demoed to the course lead in September.
 
-&#96;Python&#96; &#96;SQLAlchemy&#96; &#96;aiogram&#96; &#96;Streamlit&#96;
+**Next:** replace the students with LLM agents and see where they land.
+
+`Python` `SQLAlchemy` `aiogram` `Streamlit` · 450+ tests
 
 </td>
 <td width="50%" valign="top">
 
-### [quiet-transcript](https://github.com/alexregrets/quiet-transcript)
+### [hh-agent](https://github.com/alexregrets/hh-agent)
 
-A desktop app that turns audio, video and links into clean Markdown notes.
+A job-search agent that does the opposite of spam: hard filtering, 15 applications a day, every outcome logged. The cover-letter variant is assigned by coin flip, so comparing letters is an experiment, not hindsight.
 
-&#96;Tauri&#96; &#96;React&#96; &#96;Rust&#96;
+`Python` · randomized, logged, regressable
 
 </td>
 </tr>
 <tr>
 <td width="50%" valign="top">
 
-### [university-analysis](https://github.com/alexregrets/university-analysis)
+### [hyperspace](https://github.com/alexregrets/hyperspace)
 
-14.5k observations × 27 features. OLS and a difference-in-differences analysis of COVID.
+A Claude Code mod: the spinner becomes a space battle. X-wing or TIE, three-layer parallax, laser volleys, a hyperspace jump every 24 seconds.
 
-&#96;Python&#96; &#96;statsmodels&#96;
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="assets/hyperspace-dark.svg">
+  <img src="assets/hyperspace-light.svg" alt="An X-wing flies through a parallax starfield and fires laser volleys" width="100%">
+</picture>
+
+`TypeScript` · `/plugin install hyperspace@hyperspace`
 
 </td>
 <td width="50%" valign="top">
 
-### [uni_mail_bot](https://github.com/alexregrets/uni_mail_bot)
+### [claude-brain-starter](https://github.com/alexregrets/claude-brain-starter)
 
-Forwards a shared university mailbox into Telegram. Running on a VPS.
+File-based memory for Claude Code. A 60-line router, one hub per area of life, one line per session on where to start tomorrow, and dated decisions so you stop re-arguing them.
 
-&#96;Python&#96; &#96;aiogram&#96;
+The trimmed version of the setup I actually run every day.
+
+`Markdown` · works on day one
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [quiet-transcript](https://github.com/alexregrets/quiet-transcript)
+
+A desktop app that turns audio, video and links into clean Markdown notes.
+
+`Tauri` `React` `Rust`
+
+</td>
+<td width="50%" valign="top">
+
+### [university-analysis](https://github.com/alexregrets/university-analysis)
+
+14.5k observations × 27 features. OLS and a difference-in-differences read on the COVID shock to university rankings.
+
+`Python` `statsmodels`
 
 </td>
 </tr>
 </table>
 
 <details>
-<summary><b>More projects</b></summary>
+<summary><b>More</b></summary>
 
 <br>
 
 | Project | What it does | Stack |
 |---|---|---|
-| [caviarshow](https://github.com/alexregrets/caviarshow) | Bilingual, dual-theme landing page for the family business | HTML · CSS · JS |
-| [sc-linkbot](https://github.com/alexregrets/sc-linkbot) | SoundCloud link in, tagged MP3 out | Python |
-| [learning](https://github.com/alexregrets/learning) | Open log of relearning to program, failures included | — |
+| [uni_mail_bot](https://github.com/alexregrets/uni_mail_bot) | IMAP poller forwarding a shared university mailbox into Telegram. Live on a VPS | Python · aiogram |
+| [sc-linkbot](https://github.com/alexregrets/sc-linkbot) | SoundCloud link in, tagged MP3 out. Queue, rate limits, plugin seam | Python |
+| [python-economics](https://github.com/alexregrets/python-economics) | Second-year econometrics: OLS with diagnostics, pandas | Python · statsmodels |
+| [learning](https://github.com/alexregrets/learning) | Open log of relearning to program, failures included | HTML |
+| [caviarshow.ru](https://caviarshow.ru) | Landing page for the family business. Bilingual, dual-theme, no build step | HTML · CSS · JS |
 
 </details>
 
-## Inside the tournament
-
 <details>
-<summary><b>How the Cournot game becomes an econometrics lab</b></summary>
+<summary><b>Inside the tournament</b></summary>
 
 <br>
 
-Student teams run firms in a shared Cournot market for several rounds. Linear inverse demand &#96;P = a − b·Q&#96;, interior Nash at &#96;q* = (a − c) / b(n+1)&#96;, plus an asymmetric engine for firm-specific costs. Market parameters are inverted from the Russian oil market in 2013, so the numbers have a source.
+Student teams run firms in a shared Cournot market for several rounds. Linear inverse demand `P = a − b·Q`, interior Nash at `q* = (a − c) / b(n+1)`, plus an asymmetric engine for firm-specific costs. Market parameters are inverted from the Russian oil market in 2013, so the numbers have a source.
 
-Every round writes one row per team. By the end, the course has a panel of teams × rounds, and students run regressions on data they generated themselves. They know the data-generating process because they were inside it.
+Every round writes one row per team. By the end the course holds a panel of teams × rounds, and students run regressions on data they generated themselves. They know the data-generating process because they were inside it.
 
-Mechanics switch on at chosen rounds for chosen teams, which makes treatment timing a design decision rather than something to recover from noise.
+Mechanics switch on at chosen rounds for chosen teams, which makes treatment timing a design decision rather than something to recover from noise. That is the part I care about.
 
-Each student has a role, sees only part of the picture and holds a personal KPI that conflicts with the others. Marketing is paid on market share; finance on margin. Someone has to settle the argument instead of averaging it.
+Each student holds a role, sees only a slice of the truth and has a personal KPI that conflicts with the others: marketing is paid on market share, finance on margin. Someone has to settle the argument instead of averaging it.
 
-**248 tests.** Everything under &#96;core/&#96; is pure and deterministic, written test-first, because a plausible-but-wrong formula looks exactly like a correct one.
+Everything under `core/` is pure and deterministic, written test-first, because a plausible-but-wrong formula looks exactly like a correct one.
+
+The banner above is the next step. In Cournot the payoff is a formula, so preferences are not the problem: what is left is pure strategy. Put LLM agents in the seats and the question becomes empirical. Do they find Nash, drift into collusion, or settle somewhere stranger?
 
 </details>
 
 ## How I work
 
-- Nothing counts without a run. Predict the output, run the code, then reconcile the difference.
-- One open problem at a time. The failure mode was never difficulty; it was holding three half-finished things at once.
-- In &#96;learning/&#96;, I track hours spent writing code separately from hours a model spent writing it. Both matter; they measure different things.
+**Nothing counts without a run.** Predict the output, run the code, then reconcile the difference. The gap is the part worth studying.
 
-## Current focus
+**AI does what I already know; I do what I am learning.** Models write a lot of my code, and `learning/` tracks their hours separately from mine. Both are real, and only one of them makes me better.
 
-- Econometrics Championship
-- Causal inference: identification, IV, DiD, RDD
-- A paper on deliberate AI use among university students
-- Preparing for a master's in Europe, 2028
+**One open problem at a time.** The failure mode was never difficulty, it was holding three half-finished things at once.
+
+## Now
+
+LLM agents in the Cournot market · a Vickrey auction with LLM bidders · causal inference: IV, DiD, RDD · a paper on deliberate AI use among students · a master's in Europe, 2028
 
 ---
 

@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 236" width="760" height="236" role="img" aria-label="Terminal: whoami prints Alexander Sotnik, economics at Financial University, class of 2028; direction: incentive design for agentic economies, measured causally; now: Cournot with LLM agents, hh-agent, Claude Code mods">
+  <style>
+    .win { fill: #161b22; stroke: #30363d; }
+    .bar { fill: #0d1117; }
+    .tc, .to, .th, .tt { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; white-space: pre; }
+    .tc { fill: #e6edf3; }
+    .p  { fill: #d9a441; }
+    .to { fill: #8b949e; }
+    .th { fill: #58a6ff; }
+    .tt { fill: #8b949e; font-size: 12px; }
+    .cv { fill: #161b22; }
+    .cur { fill: #d9a441; opacity: 0; animation: on 0s 5.41s forwards, cur 1.05s steps(1) 5.41s infinite; }
+    @keyframes on { to { opacity: 1; } }
+    @keyframes cur { 50% { opacity: 0; } }
+    .c0 { animation: type0 0.24s steps(8, end) 0.60s forwards; }@keyframes type0 { to { transform: translateX(75px); } } .c1 { animation: type1 0.35s steps(1, end) 1.19s forwards; }@keyframes type1 { to { transform: translateX(435px); } } .c2 { animation: type2 0.56s steps(19, end) 2.09s forwards; }@keyframes type2 { to { transform: translateX(161px); } } .c3 { animation: type3 0.35s steps(1, end) 2.99s forwards; }@keyframes type3 { to { transform: translateX(458px); } } .c4 { animation: type4 0.26s steps(9, end) 3.89s forwards; }@keyframes type4 { to { transform: translateX(82px); } } .c5 { animation: type5 0.35s steps(1, end) 4.51s forwards; }@keyframes type5 { to { transform: translateX(427px); } }
+    @media (prefers-reduced-motion: reduce) { .cv { display: none; } .cur { animation: none; opacity: 1; } }
+  </style>
+  <rect class="win" x="0.5" y="0.5" width="759" height="235" rx="10"/>
+  <path class="bar" d="M1 11 a10 10 0 0 1 10 -10 h738 a10 10 0 0 1 10 10 v19 h-758z"/>
+  <circle cx="20" cy="16" r="5" fill="#ff5f57"/>
+  <circle cx="38" cy="16" r="5" fill="#febc2e"/>
+  <circle cx="56" cy="16" r="5" fill="#28c840"/>
+  <text class="tt" x="380" y="20" text-anchor="middle">~/alexregrets</text>
+  <clipPath id="screen"><rect x="1" y="31" width="758" height="204"/></clipPath>
+  <g clip-path="url(#screen)"><text class="tc" x="28" y="58"><tspan class="p">$</tspan> whoami</text><rect class="cv c0" x="26" y="43" width="75" height="21"/><text class="to" x="28" y="82">alexander sotnik · economics, Financial University '28</text><rect class="cv c1" x="26" y="67" width="435" height="21"/><text class="tc" x="28" y="106"><tspan class="p">$</tspan> cat direction.txt</text><rect class="cv c2" x="26" y="91" width="161" height="21"/><text class="to" x="28" y="130">incentive design for agentic economies, measured causally</text><rect class="cv c3" x="26" y="115" width="458" height="21"/><text class="tc" x="28" y="154"><tspan class="p">$</tspan> ls now/</text><rect class="cv c4" x="26" y="139" width="82" height="21"/><text class="th" x="28" y="178">cournot-x-llm-agents/   hh-agent/   claude-code-mods/</text><rect class="cv c5" x="26" y="163" width="427" height="21"/></g>
+  <text class="tc" x="28" y="202"><tspan class="p">$</tspan></text>
+  <rect class="cur" x="44" y="189" width="8" height="16"/>
+</svg>
