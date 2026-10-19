@@ -1,9 +1,8 @@
 <div align="center">
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/cournot-dark.svg">
-  <img src="assets/cournot-light.svg" alt="Cournot best-response diagram: two firms keep best-responding to each other and the path converges to the Nash equilibrium" width="760">
-</picture>
+<img src="assets/scene-xwing.webp" alt="A 3D X-wing dogfight rendered in terminal quarter-blocks, ending in a jump to hyperspace" width="760">
+<br>
+<sub>a 3D scene rendered in terminal quarter-blocks: it is the spinner of my Claude Code, see <a href="https://github.com/alexregrets/hyperspace">hyperspace</a></sub>
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
@@ -46,12 +45,9 @@ A job-search agent that does the opposite of spam: hard filtering, 15 applicatio
 
 ### [hyperspace](https://github.com/alexregrets/hyperspace)
 
-A Claude Code mod: the spinner becomes a space battle. X-wing or TIE, three-layer parallax, laser volleys, a hyperspace jump every 24 seconds.
+A Claude Code mod: the spinner becomes a space battle. A hand-written 3D rasterizer with a z-buffer, bloom and a cutting camera, drawn in terminal quarter-blocks. Six ships, torpedoes, a cinematic hyperspace jump.
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/hyperspace-dark.svg">
-  <img src="assets/hyperspace-light.svg" alt="An X-wing flies through a parallax starfield and fires laser volleys" width="100%">
-</picture>
+<img src="assets/scene-falcon.webp" alt="The Millennium Falcon under fire, rendered in terminal quarter-blocks" width="100%">
 
 `TypeScript` · `/plugin install hyperspace@hyperspace`
 
@@ -120,7 +116,7 @@ Each student holds a role, sees only a slice of the truth and has a personal KPI
 
 Everything under `core/` is pure and deterministic, written test-first, because a plausible-but-wrong formula looks exactly like a correct one.
 
-The banner above is the next step. In Cournot the payoff is a formula, so preferences are not the problem: what is left is pure strategy. Put LLM agents in the seats and the question becomes empirical. Do they find Nash, drift into collusion, or settle somewhere stranger?
+The next step: in Cournot the payoff is a formula, so preferences are not the problem: what is left is pure strategy. Put LLM agents in the seats and the question becomes empirical. Do they find Nash, drift into collusion, or settle somewhere stranger?
 
 </details>
 
