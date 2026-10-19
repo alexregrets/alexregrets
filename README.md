@@ -1,91 +1,122 @@
+<div align="center">
+
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="assets/cournot-dark.svg">
-  <img src="assets/cournot-light.svg" alt="Cournot best-response diagram: two reaction functions crossing at the Nash equilibrium" width="100%">
+  <img src="assets/cournot-light.svg" alt="Cournot best-response diagram, with reaction functions meeting at Nash equilibrium" width="760">
 </picture>
 
-### Alexander Sotnik
+# Alexander Sotnik
 
-Economics undergraduate at the Financial University, Moscow. Class of 2028.
+### Economics × code
 
-I build things at the seam between econometrics and code. Not an ML engineer who
-picked up some economics, and not an economist who picked up some Python — the
-combination is the point, and it is rare because it costs you both halves.
-Heading for causal inference: estimating a coefficient and identifying an effect
-are different jobs, and only one of them is hard to hire for.
+Economics undergraduate at the Financial University, Moscow · Class of 2028
+
+[![Python](https://img.shields.io/badge/Python-2b2b2b?style=flat-square&logo=python&logoColor=ffd43b)](https://www.python.org/)
+[![Econometrics](https://img.shields.io/badge/Econometrics-2b2b2b?style=flat-square&logo=wolfram&logoColor=d9a441)](https://github.com/alexregrets)
+[![Moscow](https://img.shields.io/badge/Moscow-2b2b2b?style=flat-square&logo=googlemaps&logoColor=d9a441)](https://github.com/alexregrets)
+
+</div>
 
 ---
 
-| | | |
+I build things at the seam between econometrics and code. The combination is the point: I want to understand both how a system works and how to measure what it does.
+
+Heading toward **causal inference**. Estimating a coefficient and identifying an effect are different jobs.
+
+## Selected work
+
+<table>
+<tr>
+<td width="50%" valign="top">
+
+### [Econometrics Championship](https://github.com/alexregrets/econ-championship)
+
+A Cournot oligopoly tournament that leaves a panel dataset behind for students to analyze.
+
+&#96;Python&#96; &#96;SQLAlchemy&#96; &#96;aiogram&#96; &#96;Streamlit&#96;
+
+</td>
+<td width="50%" valign="top">
+
+### [quiet-transcript](https://github.com/alexregrets/quiet-transcript)
+
+A desktop app that turns audio, video and links into clean Markdown notes.
+
+&#96;Tauri&#96; &#96;React&#96; &#96;Rust&#96;
+
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+
+### [university-analysis](https://github.com/alexregrets/university-analysis)
+
+14.5k observations × 27 features. OLS and a difference-in-differences analysis of COVID.
+
+&#96;Python&#96; &#96;statsmodels&#96;
+
+</td>
+<td width="50%" valign="top">
+
+### [uni_mail_bot](https://github.com/alexregrets/uni_mail_bot)
+
+Forwards a shared university mailbox into Telegram. Running on a VPS.
+
+&#96;Python&#96; &#96;aiogram&#96;
+
+</td>
+</tr>
+</table>
+
+<details>
+<summary><b>More projects</b></summary>
+
+<br>
+
+| Project | What it does | Stack |
 |---|---|---|
-| [**econ-championship**](https://github.com/alexregrets/econ-championship) | Cournot oligopoly tournament that generates a panel dataset for an econometrics course to regress on | Python · SQLAlchemy · aiogram · Streamlit |
-| [**quiet-transcript**](https://github.com/alexregrets/quiet-transcript) | Desktop app turning audio, video and links into clean Markdown notes | Tauri · React · Rust |
-| [**university-analysis**](https://github.com/alexregrets/university-analysis) | 14.5k observations × 27 features; OLS and a difference-in-differences read on COVID | Python · statsmodels |
-| [**uni_mail_bot**](https://github.com/alexregrets/uni_mail_bot) | IMAP poller forwarding a shared university mailbox into Telegram. Live on a VPS | Python · aiogram |
-| [**caviarshow**](https://github.com/alexregrets/caviarshow) | Landing page for the family business. Bilingual, dual-theme, no build step | HTML · CSS · JS |
-| [**sc-linkbot**](https://github.com/alexregrets/sc-linkbot) | SoundCloud link in, tagged MP3 out | Python |
-| [**learning**](https://github.com/alexregrets/learning) | Open log of relearning to program, failures included | — |
-
----
-
-<details>
-<summary><b>What the tournament actually does</b></summary>
-
-<br>
-
-Student teams run firms in a shared Cournot market for several rounds. Linear
-inverse demand `P = a − b·Q`, interior Nash at `q* = (a − c) / b(n+1)`, plus an
-asymmetric engine for firm-specific costs. Market parameters are not invented —
-they are inverted out of the Russian oil market in 2013, so the numbers have a
-source.
-
-Every round writes one row per team. By the end the course holds a panel of
-teams × rounds, and the same students then have to run regressions on data they
-generated themselves, knowing exactly how the data-generating process works
-because they were inside it.
-
-Mechanics switch on at chosen rounds for chosen teams, which makes treatment
-timing a design decision rather than something to be recovered from noise. That
-is the part I care about.
-
-Each student holds a role seeing only a slice of the truth, with a personal KPI
-that conflicts with the others — marketing is paid on market share, finance on
-margin. Someone has to settle the argument instead of averaging it.
-
-248 tests. Everything under `core/` is pure and deterministic, written test-first,
-because a plausible-but-wrong formula looks exactly like a correct one.
+| [caviarshow](https://github.com/alexregrets/caviarshow) | Bilingual, dual-theme landing page for the family business | HTML · CSS · JS |
+| [sc-linkbot](https://github.com/alexregrets/sc-linkbot) | SoundCloud link in, tagged MP3 out | Python |
+| [learning](https://github.com/alexregrets/learning) | Open log of relearning to program, failures included | — |
 
 </details>
 
+## Inside the tournament
+
 <details>
-<summary><b>How I work</b></summary>
+<summary><b>How the Cournot game becomes an econometrics lab</b></summary>
 
 <br>
 
-Nothing counts without a run. Correct reasoning plus an inability to write the
-code means the topic is not known — predict the output first, then run it, then
-reconcile the difference. The gap is the part worth studying.
+Student teams run firms in a shared Cournot market for several rounds. Linear inverse demand &#96;P = a − b·Q&#96;, interior Nash at &#96;q* = (a − c) / b(n+1)&#96;, plus an asymmetric engine for firm-specific costs. Market parameters are inverted from the Russian oil market in 2013, so the numbers have a source.
 
-One open problem at a time. The failure mode was never difficulty, it was
-holding three half-finished things at once.
+Every round writes one row per team. By the end, the course has a panel of teams × rounds, and students run regressions on data they generated themselves. They know the data-generating process because they were inside it.
 
-`learning/` tracks two separate columns: hours I spent writing code, and hours
-a model spent writing it for me. The second is legitimate and it does not make
-me better at the first, so mixing them makes the record worthless.
+Mechanics switch on at chosen rounds for chosen teams, which makes treatment timing a design decision rather than something to recover from noise.
+
+Each student has a role, sees only part of the picture and holds a personal KPI that conflicts with the others. Marketing is paid on market share; finance on margin. Someone has to settle the argument instead of averaging it.
+
+**248 tests.** Everything under &#96;core/&#96; is pure and deterministic, written test-first, because a plausible-but-wrong formula looks exactly like a correct one.
 
 </details>
 
-<details>
-<summary><b>Currently</b></summary>
+## How I work
 
-<br>
+- Nothing counts without a run. Predict the output, run the code, then reconcile the difference.
+- One open problem at a time. The failure mode was never difficulty; it was holding three half-finished things at once.
+- In &#96;learning/&#96;, I track hours spent writing code separately from hours a model spent writing it. Both matter; they measure different things.
 
-- Getting the tournament to a working prototype for the September 2026 semester
+## Current focus
+
+- Econometrics Championship
 - Causal inference: identification, IV, DiD, RDD
 - A paper on deliberate AI use among university students
-- Preparing for a masters in Europe, 2028
-
-</details>
+- Preparing for a master's in Europe, 2028
 
 ---
 
-Moscow · [@rutorsup](https://t.me/rutorsup) · sanek2OO6@mail.ru
+<div align="center">
+
+Moscow · [Telegram](https://t.me/rutorsup) · sanek2OO6@mail.ru
+
+</div>
