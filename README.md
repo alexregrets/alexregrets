@@ -11,8 +11,8 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-built-dark.png">
-  <img src="assets/shelf/h-built-light.png" alt="01 Built and shipped" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-built-dark.png?v=3">
+  <img src="assets/shelf/h-built-light.png?v=3" alt="01 Built and shipped" width="100%">
 </picture>
 
 <a href="https://github.com/alexregrets/alfa-credit-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/p-alfa-dark.webp"><img src="assets/shelf/p-alfa-light.webp" alt="A credit agent that says what to fix, not just no. N of M bank conditions met, shown instead of an approval probability" width="100%"></picture></a>
@@ -45,13 +45,13 @@
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-how-dark.png">
-  <img src="assets/shelf/h-how-light.png" alt="02 How I build" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-how-dark.png?v=3">
+  <img src="assets/shelf/h-how-light.png?v=3" alt="02 How I build" width="100%">
 </picture>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/pipeline-dark.png">
-  <img src="assets/shelf/pipeline-light.png" alt="Agent setup: a session-start hook loads a 60-line index, which points to one hub per area of life. Claude writes the spec, code agents build, acceptance is a red test or a live API answer. A one-line checkpoint and a weekly sync feed a ledger of dated decisions back into the next session." width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/pipeline-dark.png?v=3">
+  <img src="assets/shelf/pipeline-light.png?v=3" alt="Agent setup: a session-start hook loads a 60-line index, which points to one hub per area of life. Claude writes the spec, code agents build, acceptance is a red test or a live API answer. A one-line checkpoint and a weekly sync feed a ledger of dated decisions back into the next session." width="100%">
 </picture>
 
 Plain Markdown files, a few hooks, three models and one human at the top. AI writes much of my code; the framing, the specs, the tests and the acceptance are mine. A starter version of the memory layer is open: [claude-brain-starter](https://github.com/alexregrets/claude-brain-starter).
@@ -61,8 +61,8 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-learn-dark.png">
-  <img src="assets/shelf/h-learn-light.png" alt="03 Learning in public" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-learn-dark.png?v=3">
+  <img src="assets/shelf/h-learn-light.png?v=3" alt="03 Learning in public" width="100%">
 </picture>
 
 <a href="https://github.com/alexregrets/asstra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/learn-dark.png"><img src="assets/shelf/learn-light.png" alt="Mechanism design, self-taught from Roughgarden's CS364A: in a simulated Vickrey auction honest bidding earns the most whatever rivals do. A talk on compute-for-equity. Next: the same auction with LLM bidders." width="100%"></picture></a>
@@ -70,8 +70,8 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 <br>
 
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-studio-dark.png">
-  <img src="assets/shelf/h-studio-light.png" alt="04 Studio" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-studio-dark.png?v=3">
+  <img src="assets/shelf/h-studio-light.png?v=3" alt="04 Studio" width="100%">
 </picture>
 
 <p>
@@ -85,7 +85,7 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 
 <br>
 
-<picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-recent-dark.png"><img src="assets/shelf/h-recent-light.png" alt="05 Recently shipped" width="100%"></picture>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-recent-dark.png?v=3"><img src="assets/shelf/h-recent-light.png?v=3" alt="05 Recently shipped" width="100%"></picture>
 
 <!-- recent:start -->
 - `2026-11-17` &nbsp; **[groupmate-bot](https://github.com/alexregrets/groupmate-bot)** &nbsp; пинг: не больше 5 заданий, остальное ссылкой на /hw
