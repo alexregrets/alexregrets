@@ -316,7 +316,106 @@ def main():
                                           ("studio", "04", "Studio", "art, games, toys")]:
                 render(pg, header(t, num, title, note), t, OUT / f"h-{key}-{th}.png")
             render(pg, pipeline(t), t, OUT / f"pipeline-{th}.png")
+        extras(pg)
         b.close()
+
+
+# ---------- интро 1600x640 ----------
+
+def about(t):
+    toc = "".join(
+        f'<div style="display:flex;gap:20px;padding:22px 0;{"border-top:2px solid " + t["line"] if i else ""}">'
+        f'<span style="font-size:28px;font-weight:800;color:{t["accent"]};width:44px">{n}</span>'
+        f'<span><span style="font-size:30px;font-weight:700">{a}</span><br>'
+        f'<span class="muted" style="font-size:26px;font-weight:600">{b}</span></span></div>'
+        for i, (n, a, b) in enumerate([("01", "Built & shipped", "product and analytics, as case studies"),
+                                       ("02", "How I build", "my agent setup, anonymised"),
+                                       ("03", "Learning in public", "theory first, then the build"),
+                                       ("04", "Studio", "art, games, toys")]))
+    return f"""
+    <div class="card" style="width:1600px;height:640px">
+      <div style="position:absolute;left:80px;top:72px;width:860px">
+        <div class="kick" style="font-size:24px">Alexander Sotnik · Moscow · Financial University ’28</div>
+        <div style="font-size:72px;font-weight:800;letter-spacing:-.03em;line-height:1.05;margin-top:24px">I study economics<br>and I build.</div>
+        <div class="muted" style="font-size:30px;font-weight:500;line-height:1.4;margin-top:28px">Products with real users, models on public data,
+          and the occasional thing that exists only because it was fun to make.</div>
+        <div style="font-size:30px;font-weight:600;line-height:1.4;margin-top:28px;padding-left:24px;border-left:4px solid {t['accent']}">
+          Heading to <span style="color:{t['accent']}">mechanism design for economies where the players are AI agents</span>,
+          and causal inference to check what they actually do.</div>
+      </div>
+      <div style="position:absolute;left:1020px;right:72px;top:72px;bottom:72px;border-radius:16px;background:{t['surface']};
+                  border:2px solid {t['line']};padding:20px 36px">{toc}</div>
+    </div>"""
+
+
+# ---------- мини-карточка 780x250 ----------
+
+def mini(t, kicker, title, line, link=True):
+    arrow = f'<div style="position:absolute;right:40px;top:30px;font-size:36px;font-weight:700;color:{t["accent"]}">↗</div>' if link else ""
+    return f"""
+    <div class="card" style="width:780px;height:250px">
+      {arrow}
+      <div style="position:absolute;left:44px;right:44px;top:36px">
+        <div class="kick" style="font-size:24px">{kicker}</div>
+        <div style="font-size:42px;font-weight:800;letter-spacing:-.02em;line-height:1.1;margin-top:10px">{title}</div>
+        <div class="muted" style="font-size:26px;margin-top:10px;font-weight:600;line-height:1.3">{line}</div>
+      </div>
+    </div>"""
+
+
+# ---------- учёба 1600x700 ----------
+
+def learning(t):
+    notes = "".join(
+        f'<div style="margin-top:{0 if i == 0 else 34}px"><div class="kick" style="font-size:24px">{k}</div>'
+        f'<div style="font-size:28px;font-weight:500;line-height:1.42;margin-top:8px">{x}</div></div>'
+        for i, (k, x) in enumerate([
+            ("Mechanism design", "Self-taught from Roughgarden’s CS364A. Write down a prediction, then simulate. "
+                                 "Weeks later the same rule cleared the ASSTRA art drop."),
+            ("Finance, out loud", "A talk on compute-for-equity: a cloud paying a startup in GPUs is a venture investor, "
+                                  "and the deal pays only while utilisation stays under ~86%."),
+            ("Next", "The same auction with LLM bidders. Do they find the dominant strategy, or talk themselves out of it?")]))
+    return f"""
+    <div class="card" style="width:1600px;height:700px">
+      <div style="position:absolute;left:72px;top:72px;width:660px;bottom:72px;border-radius:16px;background:{t['surface']};
+                  border:2px solid {t['line']}">
+        <div style="padding:36px 40px 0"><div class="kick" style="font-size:24px">Vickrey auction · 100 000 rounds</div>
+          <div style="font-size:40px;font-weight:800;letter-spacing:-.02em;margin-top:10px">Honest bidding wins</div>
+          <div class="muted" style="font-size:24px;font-weight:600;margin-top:6px">mean profit per round; blue = bid your value</div></div>
+        {vickrey_art(t)}
+      </div>
+      <div style="position:absolute;left:800px;right:80px;top:80px">{notes}</div>
+    </div>"""
+
+
+# ---------- подвал 1600x300 ----------
+
+def footer(t):
+    return f"""
+    <div class="card" style="width:1600px;height:300px">
+      <div style="position:absolute;left:80px;top:64px">
+        <div class="kick" style="font-size:24px">Say hi</div>
+        <div style="font-size:64px;font-weight:800;letter-spacing:-.03em;margin-top:14px">Telegram <span style="color:{t['accent']}">@alexeval</span></div>
+      </div>
+      <div class="muted" style="position:absolute;right:80px;bottom:70px;font-size:30px;font-weight:600;text-align:right">
+        Moscow<br>sanek2OO6@mail.ru</div>
+    </div>"""
+
+
+ALSO = [("econ", "Course tournament · 450+ tests", "Econometrics Championship", "students regress on a market they played"),
+        ("hh", "Experiment · job search", "hh-agent", "cover letters assigned by coin flip"),
+        ("kapi", "T-Bank hackathon · team KAPI", "MCP investing scenario", "two PRs, 11 new tests, teammate’s repo"),
+        ("uni", "Econometrics · 14.5k obs", "university-analysis", "OLS and diff-in-diff on the COVID shock")]
+
+
+def extras(pg):
+    for th, t in THEMES.items():
+        render(pg, about(t), t, OUT / f"about-{th}.png")
+        render(pg, learning(t), t, OUT / f"learn-{th}.png")
+        render(pg, footer(t), t, OUT / f"footer-{th}.png")
+        render(pg, header(t, "05", "Recently shipped", "updated daily from public repos"), t, OUT / f"h-recent-{th}.png")
+        for key, k, title, line in ALSO:
+            render(pg, mini(t, k, title, line, key != "kapi"), t, OUT / f"m-{key}-{th}.png", MIN_PX_TILE - 2)
 
 
 if __name__ == "__main__":

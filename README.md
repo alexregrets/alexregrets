@@ -4,16 +4,9 @@
 <br>
 <sub>a 3D scene rendered in terminal quarter-blocks: it is the spinner of my Claude Code, see <a href="https://github.com/alexregrets/hyperspace">hyperspace</a></sub>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="assets/terminal-dark.svg">
-  <img src="assets/terminal-light.svg" alt="Terminal: Alexander Sotnik, economics at the Financial University, class of 2028. Direction: incentive design for agentic economies, measured causally" width="760">
-</picture>
-
 </div>
 
-I study economics and I build. Products with real users, models on public data, and the occasional thing that exists only because it was fun to make. Where it is heading: **mechanism design for economies where the players are AI agents**, and causal inference to check what those agents actually do.
-
-Each flagship below has a case-study README: the problem, the constraints, the result in numbers, what I would do differently, and my honest role.
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/about-dark.png"><img src="assets/shelf/about-light.png" alt="Alexander Sotnik, Moscow, Financial University class of 2028. I study economics and I build: products with real users, models on public data, and the occasional thing that exists only because it was fun to make. Heading to mechanism design for economies where the players are AI agents, and causal inference to check what they actually do." width="100%"></picture>
 
 <br>
 
@@ -38,19 +31,16 @@ Each flagship below has a case-study README: the problem, the constraints, the r
 
 **[Lampa](https://github.com/alexregrets/lampa)** · Bank of Russia rate decisions from primary sources only, every file hashed. The second question, whether there is an SVB inside Russian banking, got a score that **did not validate** (ROC-AUC 0.46). It stays in the README: a hidden negative result would make every other number less credible.
 
-<details>
-<summary><b>Also built</b></summary>
+<b>Also built</b>
 
-<br>
-
-| project | what it is |
-|---|---|
-| [**Econometrics Championship**](https://github.com/alexregrets/econ-championship) | A Cournot tournament for a course: teams play the market, the market leaves a panel behind, and the same students regress on data they generated. 450+ tests, `core/` written test-first. Next: LLM agents in the seats. |
-| [**hh-agent**](https://github.com/alexregrets/hh-agent) | A job-search agent where the cover-letter variant is assigned by coin flip, so comparing letters is an experiment, not hindsight. |
-| **T-Bank hackathon, team KAPI** | An MCP scenario for an investing app, two PRs with 11 new tests in a teammate's private repo. |
-| [**university-analysis**](https://github.com/alexregrets/university-analysis) | 14.5k observations × 27 features: OLS and a difference-in-differences read on the COVID shock to university rankings. |
-
-</details>
+<p>
+<a href="https://github.com/alexregrets/econ-championship"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/m-econ-dark.png"><img src="assets/shelf/m-econ-light.png" alt="Econometrics Championship: a Cournot tournament for a course, 450+ tests" width="49%"></picture></a>
+<a href="https://github.com/alexregrets/hh-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/m-hh-dark.png"><img src="assets/shelf/m-hh-light.png" alt="hh-agent: a job-search agent where the cover-letter variant is assigned by coin flip" width="49%"></picture></a>
+</p>
+<p>
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/m-kapi-dark.png"><img src="assets/shelf/m-kapi-light.png" alt="T-Bank hackathon, team KAPI: an MCP scenario for an investing app, two PRs with 11 new tests in a teammate's private repo" width="49%"></picture>
+<a href="https://github.com/alexregrets/university-analysis"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/m-uni-dark.png"><img src="assets/shelf/m-uni-light.png" alt="university-analysis: 14.5k observations, OLS and difference-in-differences on the COVID shock to university rankings" width="49%"></picture></a>
+</p>
 
 <br>
 
@@ -75,20 +65,7 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
   <img src="assets/shelf/h-learn-light.png" alt="03 Learning in public" width="100%">
 </picture>
 
-<table>
-<tr>
-<td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-vickrey-dark.webp"><img src="assets/shelf/t-vickrey-light.webp" alt="Vickrey auction simulation: honest bidding earns the most whatever rivals do" width="100%"></picture></td>
-<td width="50%" valign="top">
-
-**Mechanism design**, self-taught from Roughgarden's CS364A. The rule: write down a prediction, then simulate. In a second-price auction honest bidding wins whatever the rivals do. Weeks later the same idea shipped as the clearing rule of [ASSTRA](https://github.com/alexregrets/asstra).
-
-**Finance, out loud.** A conference talk on compute-for-equity: a cloud provider paying a startup in GPUs is a venture investor, and the deal pays only while utilisation stays under ~86%. A student research project on macro shocks and the capitalisation of Russian public banks, run through GitHub issues.
-
-**Next:** the same auction with LLM bidders. Do they find the dominant strategy, or talk themselves out of it?
-
-</td>
-</tr>
-</table>
+<a href="https://github.com/alexregrets/asstra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/learn-dark.png"><img src="assets/shelf/learn-light.png" alt="Mechanism design, self-taught from Roughgarden's CS364A: in a simulated Vickrey auction honest bidding earns the most whatever rivals do. A talk on compute-for-equity. Next: the same auction with LLM bidders." width="100%"></picture></a>
 
 <br>
 
@@ -97,37 +74,26 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
   <img src="assets/shelf/h-studio-light.png" alt="04 Studio" width="100%">
 </picture>
 
-<table>
-<tr>
-<td width="50%"><a href="https://github.com/alexregrets/asstra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-asstra-dark.webp"><img src="assets/shelf/t-asstra-light.webp" alt="ASSTRA Nerven System: generative art drop with a uniform-price auction" width="100%"></picture></a></td>
-<td width="50%"><a href="https://github.com/alexregrets/omega-gp"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-omega-dark.webp"><img src="assets/shelf/t-omega-light.webp" alt="Omega Grand Prix: browser racer with a synthesised engine" width="100%"></picture></a></td>
-</tr>
-<tr>
-<td width="50%"><a href="https://github.com/alexregrets/hyperspace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-hyperspace-dark.webp"><img src="assets/shelf/t-hyperspace-light.webp" alt="hyperspace: 3D rasterizer in terminal quarter-blocks" width="100%"></picture></a></td>
-<td width="50%"><a href="https://github.com/valodya02/skill_issue_game"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-brainrot-dark.webp"><img src="assets/shelf/t-brainrot-light.webp" alt="BRAINROT-STRIKE: browser multiplayer shooter" width="100%"></picture></a></td>
-</tr>
-</table>
+<p>
+<a href="https://github.com/alexregrets/asstra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-asstra-dark.webp"><img src="assets/shelf/t-asstra-light.webp" alt="ASSTRA Nerven System: generative art drop with a uniform-price auction" width="49%"></picture></a>
+<a href="https://github.com/alexregrets/omega-gp"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-omega-dark.webp"><img src="assets/shelf/t-omega-light.webp" alt="Omega Grand Prix: browser racer with a synthesised engine" width="49%"></picture></a>
+</p>
+<p>
+<a href="https://github.com/alexregrets/hyperspace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-hyperspace-dark.webp"><img src="assets/shelf/t-hyperspace-light.webp" alt="hyperspace: 3D rasterizer in terminal quarter-blocks" width="49%"></picture></a>
+<a href="https://github.com/valodya02/skill_issue_game"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-brainrot-dark.webp"><img src="assets/shelf/t-brainrot-light.webp" alt="BRAINROT-STRIKE: browser multiplayer shooter" width="49%"></picture></a>
+</p>
 
 <br>
 
-### Recently shipped
+<picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/h-recent-dark.png"><img src="assets/shelf/h-recent-light.png" alt="05 Recently shipped" width="100%"></picture>
 
 <!-- recent:start -->
-| when | repo | last commit |
-|---|---|---|
-| `2026-11-17` | [groupmate-bot](https://github.com/alexregrets/groupmate-bot) | пинг: не больше 5 заданий, остальное ссылкой на /hw |
-| `2026-10-19` | [hyperspace](https://github.com/alexregrets/hyperspace) | hyperspace 0.3.0: 3D README, scene clip, previews out of git |
-| `2026-10-07` | [claude-brain-starter](https://github.com/alexregrets/claude-brain-starter) | claude-brain-starter: router, preferences, open loops, sphere hub, checkpoint template |
-| `2026-09-12` | [econ-championship](https://github.com/alexregrets/econ-championship) | docs: PRODUCT_REVIEW, CLAUDE.md проекта, DECISIONS 21–29, STATE — ревизия 12.09 закрыта |
-| `2026-08-14` | [learning](https://github.com/alexregrets/learning) | progress 08-14 block 3: tournament loop, no code of his own |
+- `2026-11-17` &nbsp; **[groupmate-bot](https://github.com/alexregrets/groupmate-bot)** &nbsp; пинг: не больше 5 заданий, остальное ссылкой на /hw
+- `2026-10-19` &nbsp; **[hyperspace](https://github.com/alexregrets/hyperspace)** &nbsp; hyperspace 0.3.0: 3D README, scene clip, previews out of git
+- `2026-10-07` &nbsp; **[claude-brain-starter](https://github.com/alexregrets/claude-brain-starter)** &nbsp; claude-brain-starter: router, preferences, open loops, sphere hub, checkpoint template
+- `2026-09-12` &nbsp; **[econ-championship](https://github.com/alexregrets/econ-championship)** &nbsp; docs: PRODUCT_REVIEW, CLAUDE.md проекта, DECISIONS 21–29, STATE — ревизия 12.09 закрыта
+- `2026-08-14` &nbsp; **[learning](https://github.com/alexregrets/learning)** &nbsp; progress 08-14 block 3: tournament loop, no code of his own
 <!-- recent:end -->
 
-<sub>updated daily by a GitHub Action from my public repos</sub>
 
----
-
-<div align="center">
-
-Moscow · [Telegram](https://t.me/alexeval) · sanek2OO6@mail.ru
-
-</div>
+<a href="https://t.me/alexeval"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/footer-dark.png"><img src="assets/shelf/footer-light.png" alt="Say hi: Telegram @alexeval. Moscow, sanek2OO6@mail.ru" width="100%"></picture></a>

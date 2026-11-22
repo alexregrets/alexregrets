@@ -25,15 +25,15 @@ def api(path):
 
 
 def rows():
-    """Строки таблицы: дата, репо, первая строка последнего коммита."""
+    """Строки списка: дата, репо, первая строка последнего коммита."""
     out = []
     for repo in api(f"/users/{USER}/repos?sort=pushed&per_page=20&type=owner"):
         if repo["fork"] or repo["name"] == USER or repo["private"]:
             continue
         commit = api(f"/repos/{USER}/{repo['name']}/commits?per_page=1")[0]
-        msg = commit["commit"]["message"].splitlines()[0].replace("|", "/")[:90]
+        msg = commit["commit"]["message"].splitlines()[0][:90]
         day = commit["commit"]["committer"]["date"][:10]
-        out.append(f"| `{day}` | [{repo['name']}]({repo['html_url']}) | {msg} |")
+        out.append(f"- `{day}` &nbsp; **[{repo['name']}]({repo['html_url']})** &nbsp; {msg}")
         if len(out) == N:
             break
     return out
@@ -42,7 +42,7 @@ def rows():
 def main():
     """Подменяет содержимое между маркерами; без изменений файл не трогает."""
     text = README.read_text(encoding="utf-8")
-    table = "\n".join(["| when | repo | last commit |","|---|---|---|", *rows()])
+    table = "\n".join(rows())
     new = re.sub(r"(<!-- recent:start -->\n).*?(\n<!-- recent:end -->)", lambda m: m[1] + table + m[2], text, flags=re.S)
     if new != text:
         README.write_text(new, encoding="utf-8")
