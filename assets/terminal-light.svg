@@ -1,15 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 236" width="760" height="236" role="img" aria-label="Terminal: whoami prints Alexander Sotnik, economics at Financial University, class of 2028; direction: incentive design for agentic economies, measured causally; now: Cournot with LLM agents, hh-agent, Claude Code mods">
   <style>
-    .win { fill: #f6f8fa; stroke: #d1d9e0; }
+    .win { fill: #f4f6fb; stroke: #d5dcea; }
     .bar { fill: #ffffff; }
     .tc, .to, .th, .tt { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 13px; white-space: pre; }
-    .tc { fill: #1f2328; }
-    .p  { fill: #b7791f; }
-    .to { fill: #59636e; }
-    .th { fill: #0969da; }
-    .tt { fill: #59636e; font-size: 12px; }
-    .cv { fill: #f6f8fa; }
-    .cur { fill: #b7791f; opacity: 0; animation: on 0s 5.41s forwards, cur 1.05s steps(1) 5.41s infinite; }
+    .tc { fill: #0e1a2f; }
+    .p  { fill: #1c54f4; }
+    .to { fill: #4a5770; }
+    .th { fill: #1c54f4; }
+    .tt { fill: #4a5770; font-size: 12px; }
+    .cv { fill: #f4f6fb; }
+    .cur { fill: #1c54f4; opacity: 0; animation: on 0s 5.41s forwards, cur 1.05s steps(1) 5.41s infinite; }
     @keyframes on { to { opacity: 1; } }
     @keyframes cur { 50% { opacity: 0; } }
     .c0 { animation: type0 0.24s steps(8, end) 0.60s forwards; }@keyframes type0 { to { transform: translateX(75px); } } .c1 { animation: type1 0.35s steps(1, end) 1.19s forwards; }@keyframes type1 { to { transform: translateX(435px); } } .c2 { animation: type2 0.56s steps(19, end) 2.09s forwards; }@keyframes type2 { to { transform: translateX(161px); } } .c3 { animation: type3 0.35s steps(1, end) 2.99s forwards; }@keyframes type3 { to { transform: translateX(458px); } } .c4 { animation: type4 0.26s steps(9, end) 3.89s forwards; }@keyframes type4 { to { transform: translateX(82px); } } .c5 { animation: type5 0.35s steps(1, end) 4.51s forwards; }@keyframes type5 { to { transform: translateX(427px); } }

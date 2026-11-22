@@ -22,19 +22,19 @@ Each flagship below has a case-study README: the problem, the constraints, the r
   <img src="assets/shelf/h-built-light.png" alt="01 Built and shipped" width="100%">
 </picture>
 
-<a href="https://github.com/alexregrets/alfa-credit-agent"><img src="assets/shelf/p-alfa.webp" alt="A credit agent that says what to fix, not just no. N of M bank conditions met, shown instead of an approval probability" width="100%"></a>
+<a href="https://github.com/alexregrets/alfa-credit-agent"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/p-alfa-dark.webp"><img src="assets/shelf/p-alfa-light.webp" alt="A credit agent that says what to fix, not just no. N of M bank conditions met, shown instead of an approval probability" width="100%"></picture></a>
 
 **[Credit agent for small business](https://github.com/alexregrets/alfa-credit-agent)** · bank hackathon, team of five, I was captain. The LLM reads documents and explains; the numbers come from a rule-based core that has to pass a golden exam, and the exam itself was mutation-tested. Didn't make the final, and the case study says why. Live: [alphahack.ru](https://alphahack.ru)
 
 <br>
 
-<a href="https://github.com/alexregrets/tutor-trainers"><img src="assets/shelf/p-trainers.webp" alt="Homework trainers that learn from their own logs. 21 starts, 9 finishes" width="100%"></a>
+<a href="https://github.com/alexregrets/tutor-trainers"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/p-trainers-dark.webp"><img src="assets/shelf/p-trainers-light.webp" alt="Homework trainers that learn from their own logs. 21 starts, 9 finishes" width="100%"></picture></a>
 
 **[Homework trainers](https://github.com/alexregrets/tutor-trainers)** · a product with exactly two users, the students I tutor in English. A Telegram courier delivers trainers to their phones and logs every attempt; the log said the bottleneck was completion, not difficulty. Every new format must cite a learning-science mechanism or it doesn't ship.
 
 <br>
 
-<a href="https://github.com/alexregrets/lampa"><img src="assets/shelf/p-lampa.webp" alt="Forecasting the Bank of Russia key rate. 16 percent lower log loss than the market-implied baseline" width="100%"></a>
+<a href="https://github.com/alexregrets/lampa"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/p-lampa-dark.webp"><img src="assets/shelf/p-lampa-light.webp" alt="Forecasting the Bank of Russia key rate. 16 percent lower log loss than the market-implied baseline" width="100%"></picture></a>
 
 **[Lampa](https://github.com/alexregrets/lampa)** · Bank of Russia rate decisions from primary sources only, every file hashed. The second question, whether there is an SVB inside Russian banking, got a score that **did not validate** (ROC-AUC 0.46). It stays in the README: a hidden negative result would make every other number less credible.
 
@@ -77,7 +77,7 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 
 <table>
 <tr>
-<td width="50%" valign="top"><img src="assets/shelf/t-vickrey.webp" alt="Vickrey auction simulation: honest bidding earns the most whatever rivals do" width="100%"></td>
+<td width="50%" valign="top"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-vickrey-dark.webp"><img src="assets/shelf/t-vickrey-light.webp" alt="Vickrey auction simulation: honest bidding earns the most whatever rivals do" width="100%"></picture></td>
 <td width="50%" valign="top">
 
 **Mechanism design**, self-taught from Roughgarden's CS364A. The rule: write down a prediction, then simulate. In a second-price auction honest bidding wins whatever the rivals do. Weeks later the same idea shipped as the clearing rule of [ASSTRA](https://github.com/alexregrets/asstra).
@@ -99,12 +99,12 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 
 <table>
 <tr>
-<td width="50%"><a href="https://github.com/alexregrets/asstra"><img src="assets/shelf/t-asstra.webp" alt="ASSTRA Nerven System: generative art drop with a uniform-price auction" width="100%"></a></td>
-<td width="50%"><a href="https://github.com/alexregrets/omega-gp"><img src="assets/shelf/t-omega.webp" alt="Omega Grand Prix: browser racer with a synthesised engine" width="100%"></a></td>
+<td width="50%"><a href="https://github.com/alexregrets/asstra"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-asstra-dark.webp"><img src="assets/shelf/t-asstra-light.webp" alt="ASSTRA Nerven System: generative art drop with a uniform-price auction" width="100%"></picture></a></td>
+<td width="50%"><a href="https://github.com/alexregrets/omega-gp"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-omega-dark.webp"><img src="assets/shelf/t-omega-light.webp" alt="Omega Grand Prix: browser racer with a synthesised engine" width="100%"></picture></a></td>
 </tr>
 <tr>
-<td width="50%"><a href="https://github.com/alexregrets/hyperspace"><img src="assets/shelf/t-hyperspace.webp" alt="hyperspace: 3D rasterizer in terminal quarter-blocks" width="100%"></a></td>
-<td width="50%"><a href="https://github.com/valodya02/skill_issue_game"><img src="assets/shelf/t-brainrot.webp" alt="BRAINROT-STRIKE: browser multiplayer shooter" width="100%"></a></td>
+<td width="50%"><a href="https://github.com/alexregrets/hyperspace"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-hyperspace-dark.webp"><img src="assets/shelf/t-hyperspace-light.webp" alt="hyperspace: 3D rasterizer in terminal quarter-blocks" width="100%"></picture></a></td>
+<td width="50%"><a href="https://github.com/valodya02/skill_issue_game"><picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/t-brainrot-dark.webp"><img src="assets/shelf/t-brainrot-light.webp" alt="BRAINROT-STRIKE: browser multiplayer shooter" width="100%"></picture></a></td>
 </tr>
 </table>
 
