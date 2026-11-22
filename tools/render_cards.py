@@ -314,8 +314,8 @@ def main():
                                           ("how", "02", "How I build", "my agent setup, anonymised"),
                                           ("learn", "03", "Learning in public", "theory first, then the build"),
                                           ("studio", "04", "Studio", "art, games, toys")]:
-                render(pg, header(t, num, title, note), t, OUT / f"h-{key}-{th}.png")
-            render(pg, pipeline(t), t, OUT / f"pipeline-{th}.png")
+                render(pg, header(t, num, title, note), t, OUT / f"v3-h-{key}-{th}.png")
+            render(pg, pipeline(t), t, OUT / f"v3-pipeline-{th}.png")
         extras(pg)
         b.close()
 
@@ -413,7 +413,7 @@ def extras(pg):
         render(pg, about(t), t, OUT / f"about-{th}.png")
         render(pg, learning(t), t, OUT / f"learn-{th}.png")
         render(pg, footer(t), t, OUT / f"footer-{th}.png")
-        render(pg, header(t, "05", "Recently shipped", "updated daily from public repos"), t, OUT / f"h-recent-{th}.png")
+        render(pg, header(t, "05", "Recently shipped", "updated daily from public repos"), t, OUT / f"v3-h-recent-{th}.png")
         for key, k, title, line in ALSO:
             render(pg, mini(t, k, title, line, key != "kapi"), t, OUT / f"m-{key}-{th}.png", MIN_PX_TILE - 2)
 
