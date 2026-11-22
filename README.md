@@ -136,6 +136,6 @@ LLM agents in the Cournot market · a Vickrey auction with LLM bidders · causal
 
 <div align="center">
 
-Moscow · [Telegram](https://t.me/rutorsup) · sanek2OO6@mail.ru
+Moscow · [Telegram](https://t.me/alexeval) · sanek2OO6@mail.ru
 
 </div>
