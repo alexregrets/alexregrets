@@ -88,11 +88,11 @@ Plain Markdown files, a few hooks, three models and one human at the top. AI wri
 <picture><source media="(prefers-color-scheme: dark)" srcset="assets/shelf/v3-h-recent-dark.png"><img src="assets/shelf/v3-h-recent-light.png" alt="05 Recently shipped" width="100%"></picture>
 
 <!-- recent:start -->
+- `2026-11-27` &nbsp; **[quiet-transcribe](https://github.com/alexregrets/quiet-transcribe)** &nbsp; v0.2: vosk, t-one, openai-compat engines, two tracks, lesson folders, Windows recorder, fu
 - `2026-11-17` &nbsp; **[groupmate-bot](https://github.com/alexregrets/groupmate-bot)** &nbsp; пинг: не больше 5 заданий, остальное ссылкой на /hw
 - `2026-10-19` &nbsp; **[hyperspace](https://github.com/alexregrets/hyperspace)** &nbsp; hyperspace 0.3.0: 3D README, scene clip, previews out of git
 - `2026-10-07` &nbsp; **[claude-brain-starter](https://github.com/alexregrets/claude-brain-starter)** &nbsp; claude-brain-starter: router, preferences, open loops, sphere hub, checkpoint template
 - `2026-09-12` &nbsp; **[econ-championship](https://github.com/alexregrets/econ-championship)** &nbsp; docs: PRODUCT_REVIEW, CLAUDE.md проекта, DECISIONS 21–29, STATE — ревизия 12.09 закрыта
-- `2026-08-14` &nbsp; **[learning](https://github.com/alexregrets/learning)** &nbsp; progress 08-14 block 3: tournament loop, no code of his own
 <!-- recent:end -->
 
 
